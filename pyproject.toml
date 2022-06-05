@@ -5,9 +5,20 @@ description = ""
 authors = ["alex <alex@pdp7.net>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.6,<4"
+pystray = "0.18.0"
+timeago = "^1.0.15"
+pywebview = "^3.6.3"
+cryptography = "^37.0.2"
+appdirs = "^1.4.4"
+PyYAML = "^6.0"
+dataclasses = {version = "^0.8", python = ">=3.6,<3.7"}
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+nsmc = "nsmc:main"
+emailproxy = "nsmc.emailproxy:App"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
